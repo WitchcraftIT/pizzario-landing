@@ -21,7 +21,7 @@ button { cursor: pointer; }
 .field:focus { border-color: #c92d25; background: #fff; box-shadow: 0 0 0 4px rgba(201,45,37,.10); }
 .hero-stage { position: relative; min-height: 730px; overflow: hidden; }
 .hero-title { position: absolute; top: 86px; left: 50%; z-index: 1; width: calc(100% - 90px); transform: translateX(-50%); overflow: visible; white-space: nowrap; text-align: center; font-family: 'Bebas Neue', sans-serif; font-size: clamp(64px, 7vw, 102px); line-height: .9; letter-spacing: -.025em; }
-.hero-pizza-wrapper { position: absolute; left: 50%; bottom: 2%; z-index: 3; width: min(680px, 57vw); transform: translateX(-50%); pointer-events: none; }
+.hero-pizza-wrapper { position: absolute; left: calc(50% + 12px); bottom: 2%; z-index: 3; width: min(680px, 57vw); transform: translateX(-50%); pointer-events: none; }
 .hero-pizza-wrapper img { display: block; width: 100%; height: auto; object-fit: contain; }
 .hero-product-meta { border: 1px solid rgba(119,72,39,.12); box-shadow: 0 15px 32px rgba(74,37,17,.10); }
 .hero-rating { border: 1px solid rgba(119,72,39,.1); }
@@ -43,6 +43,13 @@ button { cursor: pointer; }
 .combo-price { text-shadow: 0 5px 20px rgba(255,255,255,.10); }
 .combo-cta { box-shadow: 0 12px 25px rgba(201,45,37,.26); transition: transform .2s ease, background .2s ease, color .2s ease; }
 .combo-cta:hover { transform: translateY(-2px); background: #fff; color: #171717; }
+.combo-visual { isolation: isolate; }
+.combo-pizza { position: absolute; overflow: hidden; border: 2px solid rgba(255,255,255,.18); border-radius: 50%; background: #eedbcc; box-shadow: 0 22px 34px rgba(0,0,0,.34); }
+.combo-pizza img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.combo-pizza-back { top: 4%; right: 22%; z-index: 1; width: 210px; height: 210px; transform: rotate(10deg); }
+.combo-pizza-front { right: 2%; bottom: -8%; z-index: 3; width: 275px; height: 275px; transform: rotate(-9deg); }
+.combo-cola { position: absolute; right: 47%; bottom: -1%; z-index: 4; width: 88px; filter: drop-shadow(0 17px 12px rgba(0,0,0,.38)); }
+.combo-contents { z-index: 5; border: 1px solid rgba(255,255,255,.2); background: rgba(255,255,255,.08); backdrop-filter: blur(10px); }
 .benefit-card { border: 1px solid rgba(170,112,70,.15); background: rgba(255,253,250,.8); box-shadow: 0 14px 30px rgba(82,42,20,.07); transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease; }
 .benefit-card:hover { transform: translateY(-5px); border-color: rgba(201,45,37,.28); box-shadow: 0 20px 36px rgba(82,42,20,.12); }
 .benefit-icon { background: linear-gradient(135deg,#fce3d3,#f7ceb1); box-shadow: inset 0 1px 0 rgba(255,255,255,.7); }
@@ -56,4 +63,4 @@ button { cursor: pointer; }
 .footer-shell::before { content: ''; position: absolute; right: -90px; bottom: -120px; width: 340px; height: 340px; border: 1px solid rgba(255,255,255,.10); border-radius: 50%; box-shadow: 0 0 0 45px rgba(255,255,255,.025); }
 .social-link { position: relative; background: rgba(255,255,255,.09); transition: transform .2s ease, background .2s ease; }
 .social-link:hover { transform: translateY(-2px); background: #c92d25; }
-@media (max-width: 640px) { .hero-stage { min-height: 640px; } .hero-title { top: 106px; width: calc(100% - 40px); white-space: normal; font-size: clamp(2.55rem, 12vw, 4.1rem); } .hero-description { top: 198px; font-size: .75rem; line-height: 1rem; } .hero-pizza-wrapper { width: min(680px, 96vw); bottom: 8%; } .hero-halo { width: 92%; height: 35%; } }
+@media (max-width: 640px) { .hero-stage { min-height: 640px; } .hero-title { top: 106px; width: calc(100% - 40px); white-space: normal; font-size: clamp(2.55rem, 12vw, 4.1rem); } .hero-description { top: 198px; font-size: .75rem; line-height: 1rem; } .hero-pizza-wrapper { left: calc(50% + 6px); width: min(680px, 96vw); bottom: 8%; } .hero-halo { width: 92%; height: 35%; } .combo-pizza-back { right: 20%; width: 165px; height: 165px; } .combo-pizza-front { right: -4%; width: 210px; height: 210px; } .combo-cola { right: 47%; width: 64px; } }
