@@ -4,7 +4,7 @@ import { trimmedHeroImage } from '../data/pizzas'
 
 export default function Hero({ pizza, pizzas, onSelect, onAdd }) {
   return <section id="top" className="px-3 pb-12 pt-5 sm:px-6 sm:pb-20">
-    <div className="hero-stage hero-debug mx-auto max-w-[1360px] rounded-[32px] bg-[#fffdfa] shadow-soft">
+    <div className="hero-stage mx-auto max-w-[1360px] rounded-[32px] bg-[#fffdfa] shadow-soft">
       <div className="hero-halo absolute bottom-[-10%] left-1/2 z-[2] h-[42%] w-[64%] -translate-x-1/2 rounded-[50%] bg-[#efd1b5]/60 blur-2xl" />
       <h1 className="hero-title"><span className="text-tomato">NEW</span> PIZZA COLLECTION</h1>
       <div className="hero-pizza-wrapper">
