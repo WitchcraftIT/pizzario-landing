@@ -9,3 +9,4 @@ export const pizzas = [
 
 export const heroImage = '/pizzario-landing/assets/pizza-hero.png'
 export const trimmedHeroImage = '/pizzario-landing/assets/pizza-hero-trimmed.webp'
+export const premiumHeroImage = '/pizzario-landing/assets/pizza-hero-premium.webp'
