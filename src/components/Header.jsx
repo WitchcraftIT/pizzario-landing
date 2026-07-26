@@ -4,7 +4,6 @@ import { useState } from 'react'
 
 const links = [
   { label: 'Меню', href: '#menu' },
-  { label: 'Подход', href: '#approach' },
   { label: 'Почему мы', href: '#benefits' },
   { label: 'Доставка', href: '#delivery' },
   { label: 'Отзывы', href: '#reviews' },
