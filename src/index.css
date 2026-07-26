@@ -43,9 +43,8 @@ button { cursor: pointer; }
 .add-button:hover { transform: rotate(90deg) scale(1.07); background: #171717; box-shadow: 0 10px 20px rgba(23,23,23,.16); }
 .craft-section { background: linear-gradient(135deg, #1c1512, #392117); box-shadow: 0 30px 60px rgba(67,30,12,.23); }
 .craft-section::after { content: ''; position: absolute; inset: 1px; border: 1px solid rgba(255,255,255,.08); border-radius: inherit; pointer-events: none; }
-.craft-cta { background: #c92d25; box-shadow: 0 12px 25px rgba(201,45,37,.26); }
 .craft-visual { pointer-events: none; }
-.craft-pizza-single { position: absolute; right: -2%; bottom: -23%; width: min(620px, 108%); margin: 0; filter: drop-shadow(0 30px 24px rgba(0,0,0,.35)); }
+.craft-pizza-single { position: absolute; bottom: -22%; left: 50%; width: min(680px, 72%); margin: 0; filter: drop-shadow(0 30px 24px rgba(0,0,0,.35)); transform: translateX(-50%); }
 .craft-pizza-single img { display: block; width: 100%; height: auto; }
 .benefit-card { border: 1px solid rgba(170,112,70,.15); background: rgba(255,253,250,.8); box-shadow: 0 14px 30px rgba(82,42,20,.07); transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease; }
 .benefit-card:hover { transform: translateY(-5px); border-color: rgba(201,45,37,.28); box-shadow: 0 20px 36px rgba(82,42,20,.12); }
@@ -64,5 +63,5 @@ button { cursor: pointer; }
 @keyframes header-arrive { from { opacity: 0; transform: translateY(-12px); filter: blur(6px); } to { opacity: 1; transform: translateY(0); filter: blur(0); } }
 @keyframes halo-breathe { 0%,100% { opacity: .8; } 50% { opacity: 1; } }
 @keyframes copy-fade { from { opacity: 0; } to { opacity: 1; } }
-@media (max-width: 640px) { .hero-stage { min-height: 640px; } .hero-title { top: 106px; width: calc(100% - 40px); white-space: normal; font-size: clamp(2.55rem, 12vw, 4.1rem); } .hero-description { top: 198px; font-size: .75rem; line-height: 1rem; } .hero-pizza-wrapper { left: calc(50% + 6px); width: min(680px, 96vw); bottom: 8%; } .hero-halo { width: 92%; height: 35%; } .craft-pizza-single { right: -9%; bottom: -27%; width: 115%; } }
+@media (max-width: 640px) { .hero-stage { min-height: 640px; } .hero-title { top: 106px; width: calc(100% - 40px); white-space: normal; font-size: clamp(2.55rem, 12vw, 4.1rem); } .hero-description { top: 198px; font-size: .75rem; line-height: 1rem; } .hero-pizza-wrapper { left: calc(50% + 6px); width: min(680px, 96vw); bottom: 8%; } .hero-halo { width: 92%; height: 35%; } .craft-pizza-single { bottom: -10%; width: 116%; } }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; } }
