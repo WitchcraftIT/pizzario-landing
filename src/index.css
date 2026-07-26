@@ -10,5 +10,6 @@ button { cursor: pointer; }
 .font-display { font-family: 'Archivo Black', sans-serif; }
 .field { border: 1px solid rgba(23,23,23,.13); border-radius: 12px; padding: .9rem 1rem; outline: none; font-size: .875rem; font-weight: 600; transition: border-color .2s, box-shadow .2s; }
 .field:focus { border-color: #c92d25; box-shadow: 0 0 0 3px rgba(201,45,37,.12); }
-.hero-grid::after { content: ''; position: absolute; width: 680px; height: 680px; right: -180px; bottom: -340px; border: 1px solid rgba(201,45,37,.12); border-radius: 999px; box-shadow: 0 0 0 42px rgba(201,45,37,.035), 0 0 0 84px rgba(201,45,37,.025); }
-@media (max-width: 640px) { .hero-grid { min-height: 640px; } }
+.hero-grid::after { content: ''; position: absolute; width: 760px; height: 760px; left: 50%; bottom: -470px; transform: translateX(-50%); border: 1px solid rgba(201,45,37,.12); border-radius: 999px; box-shadow: 0 0 0 42px rgba(201,45,37,.035), 0 0 0 84px rgba(201,45,37,.025); }
+@media (max-width: 1023px) { .hero-copy { display: none; } }
+@media (max-width: 640px) { .hero-grid { min-height: 650px; } .hero-title { top: 145px; font-size: clamp(3.3rem, 15.5vw, 5.8rem); } }
