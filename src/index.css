@@ -10,4 +10,4 @@ button { cursor: pointer; }
 .font-display { font-family: 'Archivo Black', sans-serif; }
 .field { border: 1px solid rgba(23,23,23,.13); border-radius: 12px; padding: .9rem 1rem; outline: none; font-size: .875rem; font-weight: 600; transition: border-color .2s, box-shadow .2s; }
 .field:focus { border-color: #c92d25; box-shadow: 0 0 0 3px rgba(201,45,37,.12); }
-@media (max-width: 640px) { .hero-title { top: 118px; white-space: normal; font-size: clamp(2.5rem, 10.9vw, 4.25rem); } .hero-pizza { top: 57%; } .hero-halo { width: 92%; height: 35%; } }
+@media (max-width: 640px) { .hero-title { top: 128px; white-space: normal; font-size: clamp(2.3rem, 9.5vw, 3.75rem); } .hero-pizza { top: 55%; } .hero-halo { width: 92%; height: 35%; } }
