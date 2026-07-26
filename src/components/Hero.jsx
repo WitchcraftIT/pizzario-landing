@@ -24,14 +24,14 @@ export default function Hero({ pizza, pizzas, onSelect, onAdd }) {
             className="w-full drop-shadow-[0_38px_30px_rgba(73,30,8,.30)]"
             style={{ filter: `hue-rotate(${pizza.tone}) saturate(1.08)` }}
           />
-          <img
-            src={heroImage}
-            aria-hidden="true"
-            alt=""
-            className="pointer-events-none absolute inset-0 z-[4] w-full"
-            style={{ clipPath: 'polygon(53% 0, 100% 0, 100% 52%, 70% 47%)', filter: `hue-rotate(${pizza.tone}) saturate(1.08)` }}
-          />
         </div>
+        <img
+          src={heroImage}
+          aria-hidden="true"
+          alt=""
+          className="hero-lifted-slice pointer-events-none absolute left-1/2 top-[52%] z-[4] w-[min(94vw,760px)] -translate-x-1/2 -translate-y-[35%] lg:w-[760px]"
+          style={{ clipPath: 'polygon(53% 0, 100% 0, 100% 52%, 70% 47%)', filter: `hue-rotate(${pizza.tone}) saturate(1.08)` }}
+        />
 
         <motion.button
           whileHover={{ scale: 1.07, rotate: 5 }}
