@@ -10,4 +10,9 @@ button { cursor: pointer; }
 .font-display { font-family: 'Archivo Black', sans-serif; }
 .field { border: 1px solid rgba(23,23,23,.13); border-radius: 12px; padding: .9rem 1rem; outline: none; font-size: .875rem; font-weight: 600; transition: border-color .2s, box-shadow .2s; }
 .field:focus { border-color: #c92d25; box-shadow: 0 0 0 3px rgba(201,45,37,.12); }
-@media (max-width: 640px) { .hero-title { top: 128px; white-space: normal; font-size: clamp(2.3rem, 9.5vw, 3.75rem); } .hero-pizza { top: 55%; } .hero-halo { width: 92%; height: 35%; } }
+.hero-stage { position: relative; min-height: 730px; overflow: hidden; }
+.hero-title { position: absolute; top: 86px; left: 50%; z-index: 1; width: calc(100% - 90px); transform: translateX(-50%); overflow: visible; white-space: nowrap; text-align: center; font-family: 'Bebas Neue', sans-serif; font-size: clamp(64px, 7vw, 102px); line-height: .9; letter-spacing: -.025em; }
+.hero-pizza-wrapper { position: absolute; left: 50%; bottom: -7%; z-index: 3; width: min(680px, 57vw); transform: translateX(-50%); pointer-events: none; }
+.hero-pizza-wrapper img { display: block; width: 100%; height: auto; object-fit: contain; }
+.hero-debug::after { content: ''; position: absolute; left: 50%; top: 0; bottom: 0; z-index: 100; width: 1px; background: red; pointer-events: none; }
+@media (max-width: 640px) { .hero-stage { min-height: 640px; } .hero-title { top: 106px; width: calc(100% - 40px); white-space: normal; font-size: clamp(2.55rem, 12vw, 4.1rem); } .hero-pizza-wrapper { width: min(680px, 96vw); bottom: 3%; } .hero-halo { width: 92%; height: 35%; } }
